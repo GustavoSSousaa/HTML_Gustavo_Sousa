@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metodo</title>
+</head>
+<body>
+    <form method="Post" Action="/cgi-bin-post-query">
+        Qual o seu primeiro nome?
+    <input type="text" name="primeiro_nome"value="Carlos da MP40">
+</form>
+<br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+        Informe sua senha de acesso (8 caracteres) :
+        <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">   
+    </form>
+<br/>
+    <form method="post" action="/cgi-bin-post-query">
+        Voce não visualizar nada aqui embaixo.
+        <input type="hidden" name="nome_oculto" value="form12">
+        <input type="button" name="Comer_cu" value="Comer o cu do enzo">
+    </form>
+<br/>
+    <form method="post" action="/cgi-bin-post-query">
+        Por favor, escreva aqui suas sugestão, duvidas e criticas;<br/>
+        <textarea name="critica" rows="3" cols="40">
+            Gostaria de obter mais informações sobre
+            este servidor. GRATO
+        </textarea>
+    </form>
+<br/>
+
+    <form method="post" action="/cgi-bin-post-query">
+        Onde voce pretende fazer turismo nas ferias?
+        <select name="lugares_para_ver">
+            <option>Fortaleza</option>
+            <option value="sul">Florianópolis ou porto alegre</option>
+            <option>Rio de janeiro</option>
+            <option>Brasilia</option>
+            <option value="amazonia">Manaus</option>
+        </select>
+    </form>
+<br/>
+    Que facilidades de acomodação voce deseja ? <br/>
+    <select name="opcional" multiple size="5">
+        <option>Televisão</option>
+        <option value="casal" selected>cama de casal</option>
+    </select>
+
+<br/>
+<br/>
+    <form action="/action_page.php">
+        <input type="checkbox" name="vehicle1" value="bike"/> I have a bike<br/>
+        <input type="checkbox" name="vehicle2" value="car"/> I have a car<br/>
+        <input type="checkbox" name="vehicle3" value="boat"/> I have a boat<br/>
+        <input type="submit" value="submit"/>
+    </form>
+<br/>
+    <form action="/action_page.php">
+        <input type="radio" name="gender" value="male"/> male<br/>
+        <input type="radio" name="gender" value="famale"/> famale<br/>
+        <input type="radio" name="gender" value="other"/> other<br/>
+    </form>
+
+<img src="sigma.gif" alt="sigma" height="500" width="500" />
+
+    
+</body>
+</html>
